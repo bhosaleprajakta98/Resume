@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajakta Dhananjay Bhosale — Resume</title>
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            color: #2d2d2d;
+            background: #f0f2f5;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Page Container (A4-ish) ── */
+        .resume {
+            max-width: 850px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 48px 56px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            border-radius: 6px;
+        }
+
+        /* ── Header ── */
+        .header { text-align: center; margin-bottom: 28px; }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a3c5e;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .header .subtitle {
+            font-size: 14px;
+            color: #4a6f8a;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #1a6fb5;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover { text-decoration: underline; }
+
+        .contact-info .sep { margin: 0 6px; color: #bbb; }
+
+        /* ── Sections ── */
+        .section { margin-bottom: 26px; }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a3c5e;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 2px solid #1a3c5e;
+            padding-bottom: 4px;
+            margin-bottom: 14px;
+        }
+
+        /* ── Experience ── */
+        .company {
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .role-line {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 2px;
+        }
+
+        .role {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a6fb5;
+        }
+
+        .date {
+            font-size: 13px;
+            color: #777;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .project-name {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #444;
+            margin-top: 4px;
+            margin-bottom: 2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        ul.bullets {
+            list-style: disc;
+            padding-left: 22px;
+            margin-bottom: 12px;
+        }
+
+        ul.bullets li {
+            font-size: 13.5px;
+            margin-bottom: 4px;
+            color: #3a3a3a;
+        }
+
+        /* ── Skills Grid ── */
+        .skills-group { margin-bottom: 10px; }
+
+        .skills-group .label {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .skills-group .value {
+            font-size: 13.5px;
+            color: #3a3a3a;
+        }
+
+        /* ── Education ── */
+        .edu-item { margin-bottom: 8px; }
+
+        .edu-item .degree {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .edu-item .institution {
+            font-size: 13px;
+            color: #555;
+        }
+
+        .edu-item .score {
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* ── Languages (inline) ── */
+        .lang-list {
+            font-size: 13.5px;
+            color: #3a3a3a;
+        }
+
+        .lang-list li { margin-bottom: 3px; list-style: disc; margin-left: 20px; }
+
+        /* ── Certifications / Awards ── */
+        .cert-list, .award-list, .hobby-list {
+            list-style: disc;
+            padding-left: 22px;
+        }
+
+        .cert-list li, .award-list li, .hobby-list li {
+            font-size: 13.5px;
+            color: #3a3a3a;
+            margin-bottom: 4px;
+        }
+
+        /* ── Projects ── */
+        .project-list { list-style: disc; padding-left: 22px; }
+        .project-list li { font-size: 13.5px; color: #3a3a3a; margin-bottom: 4px; }
+
+        /* ── Print ── */
+        @media print {
+            body { background: #fff; }
+            .resume { box-shadow: none; margin: 0; padding: 32px 40px; border-radius: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume">
+
+    <!-- ═══════════ HEADER ═══════════ -->
+    <div class="header">
+        <h1>Prajakta Dhananjay Bhosale</h1>
+        <div class="subtitle">Senior Software Engineer | Automotive Electronics | ADAS Systems | Onsite Japan</div>
+        <div class="contact-info">
+            <a href="mailto:bhosaleprajakta98@gmail.com">bhosaleprajakta98@gmail.com</a>
+            <span class="sep">|</span> +81-9037792449
+            <span class="sep">|</span> +91-9421216759
+            <span class="sep">|</span> Utsunomiya, Japan
+            <span class="sep">|</span> <a href="https://linkedin.com/in/prajakta-bhosale-2211521ab/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- ═══════════ PROFESSIONAL SUMMARY ═══════════ -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p style="font-size:13.5px; color:#3a3a3a;">
+            Automotive Senior Software Engineer around 5 years of strong experience in system-level engineering, requirement understanding,
+            and validation in ADAS and EE architecture projects. Skilled in ADAS feature understanding, CAN communication, 
+            and IBM Rhapsody tool. Seeking a System Engineer role in Japan where I can contribute techincal knowledge
+            of automotive systems while leveraging my Japanese language skills enabling smooth technical and cultural
+            communication.
+        </p>
+    </div>
+
+    <!-- ═══════════ PROFESSIONAL EXPERIENCE ═══════════ -->
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="company">KPIT Technologies, Pune, Maharashtra, India | Onsite: Japan</div>
+
+        <!-- Role 1 -->
+        <div style="margin-top:10px;">
+            <div class="role-line">
+                <span class="role">Senior Software Engineer (Onsite — Japan)</span>
+            </div>
+
+            <div class="project-name">
+                <span>Fusion Data Analysis Project</span>
+                <span class="date">October 2025 – Present</span>
+            </div>
+            <ul class="bullets">
+                <li>To analyze and validate fused object output from multiple sensors (camera & radar) to ensure correct detection, classification, tracking, and confidence performance for ADAS functions.</li>
+                <li>Performed fusion output analysis for detected objects (vehicles, pedestrians, lane-related objects).</li>
+                <li>Validated object attributes such as position, speed, distance, ID tracking, confidence, and classification.</li>
+                <li>Identified mismatches between sensor outputs and fusion results and reported anomalies.</li>
+                <li>Coordinated with Japan stakholders and offshore teams for smooth project execution.</li>
+            </ul>
+
+            <div class="project-name">
+                <span>TSR (Traffic Sign Recognition) Data Analysis Project</span>
+                <span class="date">June 2024 – September 2025</span>
+            </div>
+            <ul class="bullets">
+                <li>Conducted TSR feature verification and validation using real-world driving datasets.
+                    Performed sign detection analysis using Google Maps integration for ground truth comparison.</li>
+                <li>Generated technical reports highlighting detection accuracy, false positives, and missed signs along with possible error detection.</li>
+                <li>Automated analysis tasks using Python to improve reporting efficiency and reduce manual effort.</li>
+                <li>Prepared detailed analysis reports for stakeholders to support decision-making for TSR feature for the due deligence activity.</li>
+            </ul>
+        </div>
+
+        <!-- Role 2 -->
+        <div>
+            <div class="role-line">
+                <span class="role">Software Engineer (offshore — Pune)</span>
+            </div>
+            <div class="project-name">
+                <span>Camera Data Analysis Project (Honda Account)</span>
+                <span class="date">January 2024 – May 2024</span>
+            </div>
+            <ul class="bullets">
+                <li>Camera – Data Tagging & Algorithm Support- Performed scene tagging and camera dataset analysis using FSViewer.</li>
+                <li>Supported camera performance improvement through systematic data classification.
+                    Worked on dirt detection software improvement using Qride software.</li>
+                <li>Delivered analysis results and documentation for internal and client review.</li>
+                <li>Bridged technical and language gaps, enabling efficient cross-cultural execution.</li>
+            </ul>
+        </div>
+
+        <!-- Role 3 -->
+        <div>
+            <div class="role-line">
+                <span class="role">Software Engineer (offshore — Pune)</span>
+            </div>
+            <div class="project-name">
+                <span>EEAF (Electrical and Electronic Architecture Framework) Project (PACCAR Account)</span>
+                <span class="date">March 2021 – December 2023</span>
+            </div>
+            <ul class="bullets">
+                <li>Gained 2 years 10 months of hands-on experience on truck-level E/E architecture.</li>
+                <li>Supported automotive ECU level communication protocols using CAN and J1939.</li>
+                <li>Gained knowledge of signal-level requirement documentation understanding - TRS,FRS,FDS.</li>
+                <li>Performed CFA signal mapping activities for truck ECUs and network communication.
+                    Contributed to FBD (Function Block Diagram) generation and system flow representation.</li>
+                <li>Created architecture diagrams and mappings using IBM Rational Rhapsody, MS Visio, and YED GraphML.</li>
+                <li>Managed requirements and technical documentation using Windchill, IBM DOORS Next (DNG) and version control tool Tortoise SVN.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ═══════════ TECHNICAL SKILLS ═══════════ -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+
+        <div class="skills-group">
+            <span class="label">Programming Languages &amp; Development Tools:</span><br>
+            <span class="value">C Programming, Python, Basics of MATLAB & Simulink, Data Analysis, Automation Scripting</span>
+        </div>
+
+        <div class="skills-group">
+            <span class="label">Automotive Technologies &amp; Protocols:</span><br>
+            <span class="value">CAN and J1939 Protocol, ADAS features, ADAS sensors, V-Model lifecycle</span>
+        </div>
+
+        <div class="skills-group">
+            <span class="label">Software Tools &amp; Platforms:</span><br>
+            <span class="value">IBM Rational Rhapsody, FSViewer, Microsoft Visio, SVN Tortoise, Windchill, DNG, YED GraphML</span>
+        </div>
+
+        <div class="skills-group">
+            <span class="label">Professional &amp; Soft Skills:</span><br>
+            <span class="value">Bilingual Communication (Japanese–English), Stakeholder Requirement understanding, Technical Documentation, Team co-ordination/management</span>
+        </div>
+    </div>
+
+    <!-- ═══════════ LANGUAGES ═══════════ -->
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <ul class="lang-list">
+            <li><strong>English:</strong> Professional Working Proficiency</li>
+            <li><strong>Marathi:</strong> Native Language</li>
+            <li><strong>Japanese:</strong> JLPT N3 Certified, Business Japanese N2 (In Progress)</li>
+        </ul>
+    </div>
+
+    <!-- ═══════════ EDUCATION ═══════════ -->
+    <div class="section">
+        <div class="section-title">Education</div>
+
+        <div class="edu-item">
+            <div class="degree">Bachelor of Engineering (Electronics)</div>
+            <div class="institution">KIT College of Engineering, Kolhapur</div>
+            <div class="score">87.13% | 2017–2020</div>
+        </div>
+
+        <div class="edu-item">
+            <div class="degree">Engineering Diploma (Electronics &amp; Telecommunication)</div>
+            <div class="institution">Government Polytechnic Kolhapur</div>
+            <div class="score">86.69% | 2014–2017</div>
+        </div>
+
+        <div class="edu-item">
+            <div class="degree">Secondary School Certificate (SSC)</div>
+            <div class="institution">Princess Padmaraje Girls High School, Kolhapur</div>
+            <div class="score">86.80% | 2014</div>
+        </div>
+    </div>
+
+    <!-- ═══════════ CERTIFICATIONS ═══════════ -->
+    <div class="section">
+        <div class="section-title">Certifications &amp; Professional Development</div>
+        <ul class="cert-list">
+            <li>Generative AI and Prompt Engineering — KPIT Academy (2025)</li>
+            <li>Advance Driver Assistance Systems — Udemy (2024)</li>
+            <li>ADAS Sensors - Udemy (2024)</li>
+            <li>Python Programming Basics — Udemy (2024)</li>
+            <li>MATLAB and Simulink Onramp Certification — MathWorks Platform (2023)</li>
+            <li>ROS (Robotics Operating System) Workshop — MIT University Pune &amp; RSPinJapan (2023)</li>
+            <li>ECODE Automotive Courses — CANoe and CAPL scripting &amp; Embedded Electronics (2022)</li>
+            <li>PACE and Genesis Training — KPIT Academy  (2021)</li>
+        </ul>
+    </div>
+
+    <!-- ═══════════ AWARDS ═══════════ -->
+    <div class="section">
+        <div class="section-title">Awards &amp; Recognition</div>
+        <ul class="award-list">
+            <li><strong>Client Excellence Award (2024)</strong> — Honda Account for outstanding project performance</li>
+            <li><strong>Client Excellence Award (2023)</strong> — PACCAR Account for exceptional contributions</li>
+            <li><strong>Krown Award "The Comrades" (2023)</strong> — Team recognition for collaborative excellence in PACCAR projects</li>
+            <li><strong>KPCL Cricket Champions (2023)</strong> — Women's champions trophy winner in KPIT PACCAR Cricket League</li>
+            <li><strong>CSR Volunteer</strong> — Active participant in "Chote Scientist" community engagement event at KPIT</li>
+        </ul>
+    </div>
+
+    <!-- ═══════════ HOBBIES ═══════════ -->
+    <div class="section">
+        <div class="section-title">Hobbies &amp; Interests</div>
+        <ul class="hobby-list">
+            <li><strong>Warli Painting</strong> — Traditional Indian folk art form</li>
+            <li><strong>Trekking</strong> — Adventure and nature exploration</li>
+            <li><strong>Cross-cultural Exchange</strong> — Learning about different cultures and languages</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
